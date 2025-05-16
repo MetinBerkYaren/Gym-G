@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="Main_Css.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym G</title>
+
+    <style>
+      /* Responsizve Değerleri 
+550 den düşşken 50%,
+750den düşükken 40%
+1100px den düşükken 20%  */
+.icon-item {
+  flex: 1 1 calc(10% - 20px);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+@media screen and (max-width:1100px) {
+  .icon-item {
+  flex: 1 1 calc(20% - 20px);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  }
+}
+@media screen and (max-width:750px) {
+  .icon-item {
+  flex: 1 1 calc(40% - 20px);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  }
+}
+@media screen and (max-width:550px) {
+  .icon-item {
+  flex: 1 1 calc(50% - 20px);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+} 
+}
+    </style>
+
+  </head>
+  <body>
+    <div id="container">
+      <header id="MenuContainer">
+        <div id="LogoContainer">
+          <a href="Index.html" id="logoa">GYM G</a>
+        </div>
+        <nav id="nav">
+          <div class="MenuOption">
+            <a href="Galeri.html"
+              ><button type="button" class="MenuButon">Galeri</button></a
+            >
+          </div>
+          <div class="MenuOption">
+            <a href="PT.php">
+              <button type="button" class="MenuButon">Personal Trainers</button>
+            </a>
+          </div>
+          <div class="MenuOption">
+            <a href="Iletisim.html">
+              <button type="button" class="MenuButon">İletişim</button>
+            </a>
+          </div>
+          <div class="MenuOption">
+            <a href="Hakkimizda.html"
+              ><button type="button" class="MenuButon">Hakkımızda</button>
+            </a>
+          </div>
+        </nav>
+      </header>
+      <main id="MainContainer">
+ <!-- Hizmetler ve Faydalar -->
+ <section class="section">
+  <h2>Hizmetler ve Faydalar</h2>
+  <p>Spor salonumuzun sunduğu çeşitli hizmetlerle fit bir yaşam sizi bekliyor.</p>
+  <div class="icon-list">
+      <div class="icon-item">
+          <img src="IMG/Fitness_icon.webp" alt="Fitness">
+          <p>Fitness</p>
+      </div>
+      <div class="icon-item">
+          <img src="IMG/YogaKadın_icon.jpg" alt="Yoga">
+          <p>Yoga</p>
+      </div>
+      <div class="icon-item">
+          <img src="IMG/Pilates.jpg" alt="Pilates">
+          <p>Pilates</p>
+      </div>
+      <div class="icon-item">
+          <img src="IMG/grupDersi.jpg" alt="Grup Dersleri">
+          <p>Grup Dersleri</p>
+      </div>
+      <div class="icon-item">
+          <img src="IMG/pt.jpg" alt="Kişisel Antrenörlük">
+          <p>Kişisel Antrenörlük</p>
+      </div>
+  </div>
+</section>
+
+<!-- Salonun Atmosferi ve Donanımları -->
+<section class="section">
+  <h2>Salonun Atmosferi ve Donanımları</h2>
+  <p>Modern ekipmanlar ve konforlu ortamımızla size en iyi deneyimi sunuyoruz.</p>
+  <img src="IMG/samuel-girven-fqMu99l8sqo-unsplash.jpg" alt="Salon">
+</section>
+
+<!-- Üye Yorumları ve Başarı Hikayeleri -->
+<section class="section">
+  <h2>Üye Yorumları ve Başarı Hikayeleri</h2>
+  <p>Üyelerimizin gerçek başarı hikayeleri ve deneyimleri.</p>
+  <div class="testimonial">
+      <div class="testimonial-item">
+          <img src="IMG/cem.jpg" alt="Üye 1">
+          <div class="testimonial-text">
+              <p>"Bu salon sayesinde hem kilo verdim hem de kendimi çok daha güçlü hissediyorum!"</p>
+              <small>- Cem Y.</small>
+          </div>
+      </div>
+      <div class="testimonial-item">
+          <img src="IMG/marget.jpg" alt="Üye 2">
+          <div class="testimonial-text">
+              <p>"Harika eğitmenler ve samimi bir ortam. Herkese tavsiye ederim!"</p>
+              <small>- Marget R.</small>
+          </div>
+      </div>
+  </div>
+</section>
+
+      </main>
+      <footer id="FooterContainer">
+        <div class="footer-container">
+          <!-- Logo / Brand -->
+          <div class="footer-section">
+              <h2>GYM G</h2>
+              <p id="FooterP">DUMBELL,BAR ,MAKİNALAR ve sosyal ortamı ile en sevilen tedavi merkezi.
+                 Daha fazla bilgi için bizi takip edin! </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-section">
+              <h3>Linkler</h3>
+              <ul>
+                  <li><a href="Index.html">Anasayfa</a></li>
+                  <li><a href="Hakkimizda.html">Hakkımızda</a></li>
+                  <li><a href="Iletisim.html">İletişim</a></li>
+              </ul>
+          </div>
+
+          <!-- Social Media -->
+          <div class="footer-section">
+              <h3>Follow Us</h3>
+              <div class="social-icons">
+                  <a href="https://www.facebook.com/" target="_blank"><img src="IMG/FaceBook_Icon.png" alt="Facebook"></a>
+                  <a href="https://x.com/i/flow/login" target="_blank"><img src="IMG/x_PNg.png" alt="Twitter"></a>
+                  <a href="https://www.instagram.com/" target="_blank"><img src="IMG/pngegİnsta_Png.png" alt="Instagram"></a>
+              </div>
+          </div>
+      </footer>
+    </div>
+  </body>
+</html>

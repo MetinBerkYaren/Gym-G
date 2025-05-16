@@ -1,0 +1,218 @@
+html,
+body {
+  background-color: rgb(21, 21, 21);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: fantasy;
+}
+#container {
+  width: 100%;
+  margin: 0;
+}
+
+/* Menu Styling */
+#MenuContainer {
+  width: 100%;
+  height: 150px;
+  background: #0b0b0c;
+}
+#LogoContainer {
+  height: 100px;
+  background: #0b0b0c;
+  display: grid;
+  place-items: center;
+}
+#logo {
+  color: aliceblue;
+  font-size: 60px;
+  text-align: center;
+}
+#logoa {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 60px;
+}
+#logoa:hover {
+  cursor: pointer;
+  outline: none;
+  border-radius: 8%;
+  border: none;
+  background: #222222;
+  box-shadow: 0 0 5px #161616, 0 0 20px #353535, 0 0 60px #434343,
+    0 0 140px #646464;
+  color: #dcdcdc;
+}
+.nav {
+  display: flex;
+  background: #0b0b0c00;
+}
+
+.MenuOption {
+  float: left;
+
+  display: inline-block;
+
+  width: 25%;
+  height: 50px;
+}
+
+.MenuButon {
+  border-left: 1px solid #191a1c00;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  background: #f8b500;
+  font-size: 18px;
+  font-family: monospace;
+}
+#Galeri-Button {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border: 3px solid #f8b500;
+  background: #d69d00;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+}
+@media screen and (max-width: 450px) /*.MenuButon font-size responsive*/ {
+  /*AllPages*/
+  .MenuButon {
+    border-left: 1px solid #191a1c00;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    background: #f8b500;
+    font-size: 14px;
+    font-family: monospace;
+  }
+}
+.MenuButon:hover {
+  cursor: pointer;
+  background: #f8b500;
+  box-shadow: 0 0 5px #f8b500, 0 0 20px #f8b500, 0 0 60px #f8b500,
+    0 0 140px #f8b500;
+  color: white;
+  border: 2px solid white;
+}
+/* Menu Styling End ---------------------------------------------*/
+
+/* Main Styling */
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+}
+
+.image-box {
+  margin: 3px;
+  flex: 1 1 calc(33% - 6px);
+  overflow: hidden;
+  border: 2px solid #f8b500;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.image-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(248, 181, 0, 0.5);
+}
+
+.image-box:hover img {
+  transform: scale(1.05);
+}
+
+/* Main Styling End -------------------------------------------*/
+
+/* Footer Styling */
+#FooterContainer {
+  background-color: #0b0b0c;
+  width: 100%;
+  height: 200px;
+}
+.footer {
+  background-color: #0b0b0c;
+  color: #fff;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  color: #ffffff;
+}
+.footer-section {
+  flex: 1;
+  margin: 10px 20px;
+}
+.footer-section h3,
+.footer-section h2 {
+  color: #f8b500;
+  margin-bottom: 10px;
+}
+/*FooterP 600 den küçük iken font küçülücek*/
+.footer-section p,
+.footer-section ul {
+  margin: 0;
+  line-height: 1.5;
+}
+@media screen and (max-width: 600px) /*Footer #FooterP font-size responsizve*/ {
+  /*AllPages*/
+  #FooterP {
+    font-size: 10px;
+  }
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section ul li {
+  margin: 5px 0;
+}
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-section ul li a:hover {
+  color: #f8b500;
+}
+.social-icons a {
+  margin-right: 10px;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+.social-icons img {
+  width: 40px;
+  height: 40px;
+}
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  color: #aaa;
+}
+/* Footer Styling end*/
